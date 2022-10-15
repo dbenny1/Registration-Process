@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | benny.dev</title>
+    <link rel="shortcut icon" href="/images/icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="grid-container">
+        <section class="grid-item design">
+            <a href="#" id="logo">benny.dev</a>
+            <h2>Discover the world's top Developers & Creatives.</h2>
+        </section>
+        <section class="grid-item form">
+            <p>Already a member? <a href="/login/login.html" target="_blank">Sign in</a></p>
+            <a href="#" id="logo">benny.dev</a>
+            <div class="dsk-cont">
+                <h1>Sign up to a new account</h1>
+                <form action="/login/login.html" target="_blank" autocomplete="on">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="number">Phone No.</label><br>
+                    <input type="tel" id="number" name="number" required><br>
+                    <label for="email">Email Address</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password"><br>
+                    <p class="hint">* Not less than 8 characters</p>
+                    <label for="gender">Gender</label><br>
+                    <select name="gender" id="gender">
+                        <option value="select">Select a gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="rather-not">Prefer not to say</option>
+                    </select><br>
+                    <label for="dob">Birth</label><br>
+                    <input type="date" id="dob" name="dob" required><br>
+                    <label for="color">Favorite Color</label><br>
+                    <input type="color" id="color" name="color" required><br>
+
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms" id="terms-desc">I agree to the Terms and Conditions</label><br>
+
+                    <button type="submit" id="submit" value="create account">Create Account</button>
+                    <p class="align">Already got an account? <a href="/login/login.html" target="_blank">Sign in</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

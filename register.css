@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --lato: 'Lato', sans-serif;
+    --cursive: 'Cookie', cursive;
+    --pink: rgb(238, 51, 82);
+}
+
+body {
+    font-family: var(--lato);
+}
+
+.form {
+    padding: 1rem;
+}
+
+.design, .form > p {
+    display: none;
+}
+
+#logo {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-family: var(--cursive);
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+form {
+    margin: 2rem 0;
+}
+
+form label {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 550;
+}
+
+form .hint {
+    color: rgb(78, 78, 78);
+    font-size: 14px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border: 1px solid rgb(219, 118, 135);
+}
+
+#terms {
+    width: auto;
+    padding: 0;
+    margin: 1.5rem 0.5rem;
+}
+
+#terms-desc {
+    display: inline;
+    font-weight: normal;
+}
+
+form button {
+    color: white;
+    background-color: var(--pink);
+    width: 100%;
+    font-size: 18px;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border: 1px solid var(--pink);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .align {
+    text-align: center;
+}
+
+form .align a {
+    text-decoration: none;
+    color: blue;
+}
+
+@media (min-width: 1024px) {
+    .design, .form p {
+        display: block;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    .design {
+        padding: 3rem 4rem;
+        background-color: rgb(255, 218, 117)
+    }
+
+    .design #logo, .design h2 {
+        color: rgb(179, 101, 0);
+    }
+
+    .form #logo {
+        display: none;
+    }
+
+    .form > p {
+        margin: 1rem 0;
+        text-align: right;
+    }
+
+    .form .dsk-cont {
+        width: 50%;
+        margin: 2rem auto;
+    }
+
+    .form button {
+        width: auto;
+        padding: 0.6rem 2.5rem;
+    }
+
+    .form button:hover {
+        opacity: 0.9;
+    }
+
+    .form .align {
+        display: none;
+    }
+}
